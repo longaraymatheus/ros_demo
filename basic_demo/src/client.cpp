@@ -1,5 +1,5 @@
 #include <ros/ros.h>
-#include <roboheads_demo/AddTwoInts.h>
+#include <basic_demo/AddTwoInts.h>
 #include <cstdlib>
 
 int main(int argc, char **argv) {
@@ -11,8 +11,8 @@ int main(int argc, char **argv) {
   }
 
   ros::NodeHandle n;
-  ros::ServiceClient client = n.serviceClient<roboheads_demo::AddTwoInts>("add_two_ints");
-  roboheads_demo::AddTwoInts srv;
+  ros::ServiceClient client = n.serviceClient<basic_demo::AddTwoInts>("add_two_ints");
+  basic_demo::AddTwoInts srv;
 
   srv.request.a = atoll(argv[1]);
   srv.request.b = atoll(argv[2]);

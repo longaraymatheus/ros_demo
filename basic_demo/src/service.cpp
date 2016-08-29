@@ -1,7 +1,7 @@
 #include <ros/ros.h>
-#include <roboheads_demo/AddTwoInts.h>
+#include <basic_demo/AddTwoInts.h>
 
-bool add(roboheads_demo::AddTwoInts::Request  &req, roboheads_demo::AddTwoInts::Response &res ) {
+bool add(basic_demo::AddTwoInts::Request  &req, basic_demo::AddTwoInts::Response &res ) {
   res.sum = req.a + req.b;
   ROS_INFO("request: x=%ld, y=%ld", (long int)req.a, (long int)req.b);
   ROS_INFO("sending back response: [%ld]", (long int)res.sum);
