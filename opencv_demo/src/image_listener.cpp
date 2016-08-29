@@ -1,3 +1,11 @@
+/*
+ * Disclaimer Note:
+ * ROS-related code was taken from http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages.
+ *
+ * OpenCV-related code was taken from https://github.com/sol-prog/OpenCV-red-circle-detection by Solarian Programmer.
+ * See his blog post at https://solarianprogrammer.com/2015/05/08/detect-red-circles-image-using-opencv/.
+ */
+
 #include <ros/ros.h>
 #include <image_transport/image_transport.h>
 #include <cv_bridge/cv_bridge.h>

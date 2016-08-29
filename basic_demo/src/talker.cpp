@@ -1,3 +1,8 @@
+/*
+ * Disclaimer Note:
+ * Code was taken from http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29
+ */
+
 #include <ros/ros.h>
 #include <std_msgs/String.h>
 #include <string> 
